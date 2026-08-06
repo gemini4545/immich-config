@@ -26,7 +26,6 @@ services:
   # 如果你还需要运行其他 Immich 服务，可以在这里继续添加
   # 例如 immich-server、immich-microservices、redis、postgres 等
   # 但这里只保留了 ML 服务的配置，其余服务请根据你的实际部署情况自行添加
-
 networks:
   immich_net:
-    driver: bridge
+    external: true
