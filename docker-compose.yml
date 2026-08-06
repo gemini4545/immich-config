@@ -3,7 +3,8 @@
 services:
   immich-machine-learning:
     container_name: immich_machine_learning
-    image: ghcr.m.daocloud.io/immich-app/immich-machine-learning:v3-openvino
+    #image: ghcr.m.daocloud.io/immich-app/immich-machine-learning:v3-openvino
+    image: ghcr.m.daocloud.io/immich-app/immich-machine-learning:v2.4.1-openvino
     extends:
       file: hwaccel.ml.yml
       service: openvino
